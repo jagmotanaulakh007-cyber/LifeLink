@@ -1,0 +1,398 @@
+.ambulance-page {
+  min-height: calc(100vh - 80px);
+  padding: 52px 0 70px;
+  background: var(--bg);
+}
+
+.ambulance-header {
+  margin-bottom: 25px;
+}
+
+.ambulance-header h1 {
+  font-size: 2.3rem;
+  margin-bottom: 8px;
+}
+
+.ambulance-header p {
+  max-width: 650px;
+  font-size: .95rem;
+}
+
+
+/* EMERGENCY NOTICE */
+
+.ambulance-emergency-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 17px 20px;
+  margin-bottom: 28px;
+  background: #fff1f1;
+  border: 1px solid #f3caca;
+  border-radius: 14px;
+  color: #c62828;
+}
+
+.ambulance-emergency-notice svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ambulance-emergency-notice strong {
+  display: block;
+  font-size: .84rem;
+}
+
+.ambulance-emergency-notice p {
+  margin-top: 3px;
+  font-size: .76rem;
+}
+
+
+/* SEARCH */
+
+.ambulance-search-card {
+  padding: 25px;
+  margin-bottom: 45px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.ambulance-section-heading {
+  margin-bottom: 20px;
+}
+
+.ambulance-section-heading h2 {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.ambulance-section-heading p {
+  font-size: .82rem;
+}
+
+.ambulance-search-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: end;
+}
+
+.ambulance-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ambulance-field label {
+  color: var(--muted);
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.ambulance-input-wrap {
+  position: relative;
+}
+
+.ambulance-input-wrap svg {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.ambulance-input-wrap input {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.ambulance-search-button {
+  height: 46px;
+  white-space: nowrap;
+}
+
+
+/* RESULTS */
+
+.ambulance-results {
+  margin-bottom: 30px;
+}
+
+.ambulance-results-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.ambulance-results-heading h2 {
+  font-size: 1.35rem;
+}
+
+.ambulance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+
+/* AMBULANCE CARD */
+
+.ambulance-card {
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.ambulance-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.ambulance-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #fff1f1;
+  color: #d53935;
+}
+
+.ambulance-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #16805f;
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.ambulance-status > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #159a70;
+}
+
+.ambulance-card h3 {
+  font-size: 1rem;
+  margin-bottom: 7px;
+}
+
+.ambulance-type {
+  margin-bottom: 17px;
+}
+
+.ambulance-type strong {
+  color: var(--primary);
+  font-size: .8rem;
+}
+
+.ambulance-info {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 18px;
+}
+
+.ambulance-info span {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  color: var(--muted);
+  font-size: .77rem;
+}
+
+.ambulance-info svg {
+  flex-shrink: 0;
+  color: #94a3b8;
+  margin-top: 1px;
+}
+
+
+/* BUTTON */
+
+.ambulance-card-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.ambulance-details-button {
+  min-height: 40px;
+  padding: 9px 10px;
+  border: 1px solid var(--primary);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--primary);
+  font-size: .76rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ambulance-details-button:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+
+/* EMPTY */
+
+.ambulance-empty {
+  padding: 50px 20px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  color: var(--muted);
+}
+
+.ambulance-empty svg {
+  margin-bottom: 10px;
+  color: #94a3b8;
+}
+
+.ambulance-empty h3 {
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+
+/* MODAL */
+
+.ambulance-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(5, 20, 35, .55);
+}
+
+.ambulance-modal {
+  width: min(580px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 25px;
+  background: var(--surface);
+  border-radius: 18px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, .2);
+}
+
+.ambulance-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.ambulance-modal-header h2 {
+  font-size: 1.3rem;
+}
+
+.ambulance-modal-close {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.ambulance-modal-info {
+  display: grid;
+  gap: 12px;
+  padding: 20px 0;
+  margin-top: 17px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.ambulance-modal-info div {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: var(--muted);
+  font-size: .8rem;
+}
+
+.ambulance-modal-info svg {
+  flex-shrink: 0;
+  color: var(--primary);
+}
+
+.ambulance-contact-button {
+  width: 100%;
+  min-height: 42px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #e53935;
+  border-radius: 9px;
+  background: #e53935;
+  color: #fff;
+  font-size: .76rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .ambulance-search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .ambulance-search-button {
+    width: 100%;
+  }
+
+  .ambulance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .ambulance-page {
+    padding: 38px 0 50px;
+  }
+
+  .ambulance-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .ambulance-search-card {
+    padding: 18px;
+  }
+
+  .ambulance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ambulance-modal {
+    padding: 20px;
+  }
+
+}
